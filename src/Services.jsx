@@ -54,20 +54,18 @@ function Services({ lang, t }) {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                  <div className="absolute -bottom-6 right-6 bg-[#C6A15B] text-[#161311] p-3 rounded-full shadow-lg z-10 border-2 border-[#161311] flex items-center justify-center transform group-hover:scale-110 transition duration-300">
-                    <Icon size={20} strokeWidth={1.5} />
-                  </div>
                 </div>
 
                 {/* Content body */}
-                <div className="p-6 pt-8 flex-grow flex flex-col relative">
+                <div className="p-6 flex-grow flex flex-col relative">
                   {/* Gold left accent bar */}
                   <div className="absolute top-0 left-0 w-1 h-full bg-[#C6A15B] group-hover:w-2 transition-all duration-300 rounded-bl-2xl" />
                   <h3
-                    className="text-[#FAF6F0] text-xl font-semibold mb-2"
+                    className="text-[#FAF6F0] text-xl font-semibold mb-2 flex items-center gap-2"
                     style={{ fontFamily: headingFont }}
                   >
                     {item.title}
+                    <Icon size={20} className="text-[#C6A15B]" strokeWidth={2} />
                   </h3>
                   <p
                     className="text-[#FAF6F0]/60 text-sm leading-relaxed"
