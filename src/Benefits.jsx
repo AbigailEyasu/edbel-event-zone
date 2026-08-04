@@ -12,18 +12,15 @@ function Benefits({ lang, t }) {
   return (
     <section
       ref={ref}
-      className={`relative bg-gradient-to-b from-[#FAF6F0] via-white to-[#FAF8F5] py-20 px-6 sm:px-10 transition-all duration-700 overflow-hidden ${
+      className={`bg-[#161311] py-20 px-6 sm:px-10 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
-      {/* Luxury Dot Texture Overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(#C6A15B_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.04] pointer-events-none" />
-
-      <div className="max-w-5xl mx-auto text-center relative z-10">
-        <h2 className="text-[#161311] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-[#FAF6F0] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
           {t.benefits.heading}
         </h2>
-        <p className="text-[#7A1F2B] mt-3 mb-12" style={{ fontFamily }}>
+        <p className="text-[#C6A15B] mt-3 mb-12" style={{ fontFamily }}>
           {t.benefits.subheading}
         </p>
 
@@ -33,17 +30,17 @@ function Benefits({ lang, t }) {
             return (
               <div
                 key={i}
-                className="bg-white border border-[#E8D9D3] rounded-2xl p-6 text-left shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between"
+                className="bg-[#1E1916] border border-[#2a221c] rounded-2xl p-6 text-left shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between"
               >
                 <div className="absolute top-0 left-0 w-1 h-full bg-[#C6A15B] group-hover:w-2 transition-all duration-300" />
                 <div>
-                  <div className="bg-[#FAF6F0] w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-[#C6A15B] group-hover:bg-[#C6A15B] group-hover:text-white transition duration-300">
+                  <div className="bg-[#2a221c] w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-[#C6A15B] group-hover:bg-[#C6A15B] group-hover:text-[#161311] transition duration-300">
                     <Icon size={24} strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-[#161311] text-xl font-semibold mb-2" style={{ fontFamily: headingFont }}>
+                  <h3 className="text-[#FAF6F0] text-xl font-semibold mb-2" style={{ fontFamily: headingFont }}>
                     {item.title}
                   </h3>
-                  <p className="text-[#161311]/70 text-sm leading-relaxed" style={{ fontFamily }}>
+                  <p className="text-[#FAF6F0]/60 text-sm leading-relaxed" style={{ fontFamily }}>
                     {item.desc}
                   </p>
                 </div>

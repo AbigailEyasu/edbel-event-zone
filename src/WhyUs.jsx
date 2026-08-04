@@ -12,19 +12,16 @@ function WhyUs({ lang, t }) {
   return (
     <section
       ref={ref}
-      className={`relative bg-gradient-to-b from-[#FAF6F0] via-white to-[#FAF8F5] py-20 px-6 sm:px-10 transition-all duration-700 overflow-hidden ${
+      className={`bg-[#161311] py-20 px-6 sm:px-10 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
-      {/* Luxury Dot Texture Overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(#C6A15B_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.04] pointer-events-none" />
-
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-[#161311] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
+          <h2 className="text-[#FAF6F0] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
             {t.whyUs.heading}
           </h2>
-          <p className="text-[#7A1F2B] mt-3" style={{ fontFamily }}>
+          <p className="text-[#C6A15B] mt-3" style={{ fontFamily }}>
             {t.whyUs.subheading}
           </p>
         </div>
@@ -33,22 +30,21 @@ function WhyUs({ lang, t }) {
           {/* Left Column: Mission & Stats */}
           <div className="flex flex-col gap-8 text-left">
             <div>
-              <h3 className="text-[#7A1F2B] text-xl font-semibold mb-3" style={{ fontFamily: headingFont }}>
+              <h3 className="text-[#C6A15B] text-xl font-semibold mb-3" style={{ fontFamily: headingFont }}>
                 {t.whyUs.missionTitle}
               </h3>
-              <p className="text-[#161311]/80 text-base leading-relaxed" style={{ fontFamily }}>
+              <p className="text-[#FAF6F0]/70 text-base leading-relaxed" style={{ fontFamily }}>
                 {t.whyUs.missionDesc}
               </p>
             </div>
-
             {/* Stats Grid */}
-            <div className="grid grid-cols-3 gap-4 border-t border-[#E8D9D3] pt-8">
+            <div className="grid grid-cols-3 gap-4 border-t border-[#2a221c] pt-8">
               {t.whyUs.stats.map((stat, i) => (
                 <div key={i} className="text-center md:text-left">
-                  <span className="block text-[#7A1F2B] text-3xl md:text-4xl font-bold font-serif">
+                  <span className="block text-[#C6A15B] text-3xl md:text-4xl font-bold font-serif">
                     {stat.value}
                   </span>
-                  <span className="block text-[#161311]/70 text-xs md:text-sm font-medium mt-1 leading-tight" style={{ fontFamily }}>
+                  <span className="block text-[#FAF6F0]/60 text-xs md:text-sm font-medium mt-1 leading-tight" style={{ fontFamily }}>
                     {stat.label}
                   </span>
                 </div>
@@ -56,23 +52,23 @@ function WhyUs({ lang, t }) {
             </div>
           </div>
 
-          {/* Right Column: Differentiators vertical list */}
+          {/* Right Column: Differentiators */}
           <div className="flex flex-col gap-6">
             {t.whyUs.items.map((item, i) => {
               const Icon = icons[i]
               return (
                 <div
                   key={i}
-                  className="bg-white border border-[#E8D9D3] rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex gap-4 items-start"
+                  className="bg-[#1E1916] border border-[#2a221c] rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex gap-4 items-start"
                 >
-                  <div className="bg-[#FAF6F0] w-12 h-12 rounded-xl flex items-center justify-center text-[#7A1F2B] flex-shrink-0">
+                  <div className="bg-[#2a221c] w-12 h-12 rounded-xl flex items-center justify-center text-[#C6A15B] flex-shrink-0">
                     <Icon size={24} strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h4 className="text-[#161311] text-lg font-semibold mb-1" style={{ fontFamily: headingFont }}>
+                    <h4 className="text-[#FAF6F0] text-lg font-semibold mb-1" style={{ fontFamily: headingFont }}>
                       {item.title}
                     </h4>
-                    <p className="text-[#161311]/70 text-sm leading-relaxed" style={{ fontFamily }}>
+                    <p className="text-[#FAF6F0]/60 text-sm leading-relaxed" style={{ fontFamily }}>
                       {item.desc}
                     </p>
                   </div>
