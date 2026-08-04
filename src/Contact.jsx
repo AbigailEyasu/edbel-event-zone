@@ -1,11 +1,7 @@
 import { useReveal } from "./useReveal"
 import { MapPin } from "lucide-react"
 
-const sectionBg = {
-  backgroundColor: "#FAF6F0",
-  backgroundImage:
-    "repeating-linear-gradient(45deg, rgba(198,161,91,0.08) 0px, rgba(198,161,91,0.08) 1px, transparent 1px, transparent 16px)",
-}
+
 
 function Contact({ lang, t }) {
   const isAm = lang === "am"
@@ -22,14 +18,13 @@ function Contact({ lang, t }) {
     <section
       id="contact"
       ref={ref}
-      style={sectionBg}
-      className={`py-12 md:py-20 px-6 sm:px-10 transition-all duration-700 ${
+      className={`bg-[#161311] py-12 md:py-20 px-6 sm:px-10 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2
-          className="text-[#161311] text-3xl md:text-4xl font-semibold"
+          className="text-[#FAF6F0] text-3xl md:text-4xl font-semibold"
           style={{ fontFamily: headingFont }}
         >
           {t.contact.heading}
@@ -42,35 +37,35 @@ function Contact({ lang, t }) {
           {/* Form */}
           <form
             onSubmit={handleSubmit}
-            className="bg-white rounded-2xl p-8 shadow-sm border border-[#E8D9D3] flex flex-col gap-4"
+            className="bg-[#1E1916] rounded-2xl p-8 shadow-sm border border-[#2a221c] flex flex-col gap-4"
           >
             <input
               type="text"
               placeholder={t.contact.formName}
-              className="border border-[#E8D9D3] rounded-lg px-4 py-3 outline-none focus:border-[#C6A15B] text-[#161311] placeholder-[#161311]/40 bg-white"
+              className="border border-[#2a221c] rounded-lg px-4 py-3 outline-none focus:border-[#C6A15B] text-[#FAF6F0] placeholder-[#FAF6F0]/40 bg-[#2a221c]"
               style={{ fontFamily }}
             />
             <input
               type="tel"
               placeholder={t.contact.formPhone}
-              className="border border-[#E8D9D3] rounded-lg px-4 py-3 outline-none focus:border-[#C6A15B] text-[#161311] placeholder-[#161311]/40 bg-white"
+              className="border border-[#2a221c] rounded-lg px-4 py-3 outline-none focus:border-[#C6A15B] text-[#FAF6F0] placeholder-[#FAF6F0]/40 bg-[#2a221c]"
               style={{ fontFamily }}
             />
             <input
               type="text"
               placeholder={t.contact.formEvent}
-              className="border border-[#E8D9D3] rounded-lg px-4 py-3 outline-none focus:border-[#C6A15B] text-[#161311] placeholder-[#161311]/40 bg-white"
+              className="border border-[#2a221c] rounded-lg px-4 py-3 outline-none focus:border-[#C6A15B] text-[#FAF6F0] placeholder-[#FAF6F0]/40 bg-[#2a221c]"
               style={{ fontFamily }}
             />
             <input
               type="date"
-              className="border border-[#E8D9D3] rounded-lg px-4 py-3 outline-none focus:border-[#C6A15B] text-[#161311]/60 bg-white"
+              className="border border-[#2a221c] rounded-lg px-4 py-3 outline-none focus:border-[#C6A15B] text-[#FAF6F0]/60 bg-[#2a221c]"
               style={{ fontFamily }}
             />
             {/* Submit button — keeping deep rose for strong CTA contrast */}
             <button
               type="submit"
-              className="bg-[#7A1F2B] text-white py-3 rounded-full font-medium hover:bg-[#8f2634] transition cursor-pointer"
+              className="bg-[#C6A15B] text-[#161311] py-3 rounded-full font-semibold hover:bg-[#d8b876] transition cursor-pointer"
               style={{ fontFamily }}
             >
               {t.contact.formButton}
@@ -81,12 +76,12 @@ function Contact({ lang, t }) {
           <div className="flex flex-col gap-6" style={{ fontFamily }}>
             <div>
               <h3 className="text-[#C6A15B] font-semibold mb-1">{t.contact.callUs}</h3>
-              <a href="tel:+251913904484" className="block text-[#161311]/80 hover:text-[#C6A15B] transition">+251 91 390 4484</a>
-              <a href="tel:+251996910890" className="block text-[#161311]/80 hover:text-[#C6A15B] transition">+251 99 691 0890</a>
+              <a href="tel:+251913904484" className="block text-[#FAF6F0]/80 hover:text-[#C6A15B] transition">+251 91 390 4484</a>
+              <a href="tel:+251996910890" className="block text-[#FAF6F0]/80 hover:text-[#C6A15B] transition">+251 99 691 0890</a>
             </div>
             <div>
               <h3 className="text-[#C6A15B] font-semibold mb-1">{t.contact.visitUs}</h3>
-              <p className="text-[#161311]/80 flex items-start gap-2">
+              <p className="text-[#FAF6F0]/80 flex items-start gap-2">
                 <MapPin className="text-[#C6A15B] mt-1 flex-shrink-0" size={18} />
                 <a href="https://maps.app.goo.gl/HdUWaKT3rtdDicWZ6" target="_blank" rel="noopener noreferrer" className="hover:text-[#C6A15B] transition">
                   {t.contact.address}
@@ -100,7 +95,7 @@ function Contact({ lang, t }) {
                   href="https://t.me/EdbelEventZone"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7A1F2B] underline hover:text-[#C6A15B] transition"
+                  className="text-[#C6A15B] underline hover:text-[#d8b876] transition"
                 >
                   Telegram — @EdbelEventZone
                 </a>
@@ -108,7 +103,7 @@ function Contact({ lang, t }) {
                   href="https://instagram.com/edbeleventzone"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7A1F2B] underline hover:text-[#C6A15B] transition"
+                  className="text-[#C6A15B] underline hover:text-[#d8b876] transition"
                 >
                   Instagram — @edbeleventzone
                 </a>
@@ -116,7 +111,7 @@ function Contact({ lang, t }) {
                   href="https://tiktok.com/@edbeleventzone"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7A1F2B] underline hover:text-[#C6A15B] transition"
+                  className="text-[#C6A15B] underline hover:text-[#d8b876] transition"
                 >
                   TikTok — @edbeleventzone
                 </a>
@@ -124,7 +119,7 @@ function Contact({ lang, t }) {
                   href="https://maps.app.goo.gl/HdUWaKT3rtdDicWZ6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7A1F2B] underline hover:text-[#C6A15B] transition"
+                  className="text-[#C6A15B] underline hover:text-[#d8b876] transition"
                 >
                   View on Google Maps
                 </a>
