@@ -1,4 +1,3 @@
-import heroImg from "./assets/gallery/gallery-6.jpg"
 function Hero({ lang, setLang, t }) {
   return (
     <section
