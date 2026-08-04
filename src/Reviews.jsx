@@ -10,12 +10,12 @@ function Reviews({ lang, t }) {
   return (
     <section
       ref={ref}
-      className={`relative bg-gradient-to-b from-[#F5EAE6] via-white to-[#F5EAE6] py-20 px-6 sm:px-10 transition-all duration-700 overflow-hidden ${
+      className={`relative bg-gradient-to-b from-[#FAF6F0] via-white to-[#FAF8F5] py-20 px-6 sm:px-10 transition-all duration-700 overflow-hidden ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
       {/* Luxury Dot Texture Overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(#7A1F2B_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.03] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(#C6A15B_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.04] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <h2 className="text-[#161311] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
