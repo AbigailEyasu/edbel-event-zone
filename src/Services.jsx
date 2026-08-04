@@ -8,7 +8,7 @@ const serviceImages = [
   "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=600&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=600&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1535254973040-607b474cb50d?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1519225495810-7512c696505a?q=80&w=600&auto=format&fit=crop"
+  "https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=600&auto=format&fit=crop"
 ]
 
 const sectionBg = {
@@ -27,7 +27,7 @@ function Services({ lang, t }) {
     <section
       ref={ref}
       style={sectionBg}
-      className={`py-20 px-6 sm:px-10 transition-all duration-700 ${
+      className={`py-12 md:py-20 px-6 sm:px-10 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
@@ -38,7 +38,7 @@ function Services({ lang, t }) {
         >
           {t.services.heading}
         </h2>
-        <p className="text-[#C6A15B] mt-3 mb-16" style={{ fontFamily }}>
+        <p className="text-[#C6A15B] mt-3 mb-10 md:mb-16" style={{ fontFamily }}>
           {t.services.subheading}
         </p>
 

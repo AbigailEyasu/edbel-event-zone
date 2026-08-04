@@ -16,12 +16,12 @@ function FAQ({ lang, t }) {
   return (
     <section
       ref={ref}
-      className={`bg-[#161311] py-20 px-6 sm:px-10 transition-all duration-700 ${
+      className={`bg-[#161311] py-12 md:py-20 px-6 sm:px-10 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 md:mb-12">
           <h2 className="text-[#FAF6F0] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
             {t.faq.heading}
           </h2>

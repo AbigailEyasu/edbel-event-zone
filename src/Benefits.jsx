@@ -1,7 +1,7 @@
-import { Tag, Sparkles, MessagesSquare, Clock } from "lucide-react"
+import { Tag, Star, MessageCircle, Clock } from "lucide-react"
 import { useReveal } from "./useReveal"
 
-const icons = [Tag, Sparkles, MessagesSquare, Clock]
+const icons = [Tag, Star, MessageCircle, Clock]
 
 function Benefits({ lang, t }) {
   const isAm = lang === "am"
@@ -12,7 +12,7 @@ function Benefits({ lang, t }) {
   return (
     <section
       ref={ref}
-      className={`bg-[#161311] py-20 px-6 sm:px-10 transition-all duration-700 ${
+      className={`bg-[#161311] py-12 md:py-20 px-6 sm:px-10 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
@@ -20,7 +20,7 @@ function Benefits({ lang, t }) {
         <h2 className="text-[#FAF6F0] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
           {t.benefits.heading}
         </h2>
-        <p className="text-[#C6A15B] mt-3 mb-12" style={{ fontFamily }}>
+        <p className="text-[#C6A15B] mt-3 mb-8 md:mb-12" style={{ fontFamily }}>
           {t.benefits.subheading}
         </p>
 

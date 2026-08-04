@@ -1,7 +1,7 @@
-import { Award, Sliders, HeartHandshake } from "lucide-react"
+import { Award, Settings, Users } from "lucide-react"
 import { useReveal } from "./useReveal"
 
-const icons = [Award, Sliders, HeartHandshake]
+const icons = [Award, Settings, Users]
 
 function WhyUs({ lang, t }) {
   const isAm = lang === "am"
@@ -12,16 +12,16 @@ function WhyUs({ lang, t }) {
   return (
     <section
       ref={ref}
-      className={`bg-[#161311] py-20 px-6 sm:px-10 transition-all duration-700 ${
+      className={`bg-[#161311] py-12 md:py-20 px-6 sm:px-10 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <h2 className="text-[#FAF6F0] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
             {t.whyUs.heading}
           </h2>
-          <p className="text-[#C6A15B] mt-3" style={{ fontFamily }}>
+          <p className="text-[#C6A15B] mt-3 mb-8 md:mb-0" style={{ fontFamily }}>
             {t.whyUs.subheading}
           </p>
         </div>

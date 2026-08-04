@@ -18,7 +18,7 @@ function Gallery({ lang, t }) {
     <section
       id="gallery"
       ref={ref}
-      className={`bg-[#161311] py-20 px-6 transition-all duration-700 ${
+      className={`bg-[#161311] py-12 md:py-20 px-6 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
@@ -29,7 +29,7 @@ function Gallery({ lang, t }) {
         >
           {t.gallery.heading}
         </h2>
-        <p className="text-[#C6A15B] mt-3 mb-12" style={{ fontFamily }}>
+        <p className="text-[#C6A15B] mt-3 mb-10 md:mb-12" style={{ fontFamily }}>
           {t.gallery.subheading}
         </p>
 

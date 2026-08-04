@@ -1,4 +1,5 @@
 import { useReveal } from "./useReveal"
+import { MapPin } from "lucide-react"
 
 const sectionBg = {
   backgroundColor: "#FAF6F0",
@@ -22,7 +23,7 @@ function Contact({ lang, t }) {
       id="contact"
       ref={ref}
       style={sectionBg}
-      className={`py-20 px-6 sm:px-10 transition-all duration-700 ${
+      className={`py-12 md:py-20 px-6 sm:px-10 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
@@ -33,7 +34,7 @@ function Contact({ lang, t }) {
         >
           {t.contact.heading}
         </h2>
-        <p className="text-[#C6A15B] mt-3 mb-12" style={{ fontFamily }}>
+        <p className="text-[#C6A15B] mt-3 mb-8 md:mb-12" style={{ fontFamily }}>
           {t.contact.subheading}
         </p>
 
@@ -80,12 +81,17 @@ function Contact({ lang, t }) {
           <div className="flex flex-col gap-6" style={{ fontFamily }}>
             <div>
               <h3 className="text-[#C6A15B] font-semibold mb-1">{t.contact.callUs}</h3>
-              <p className="text-[#161311]/80">+251 91 390 4484</p>
-              <p className="text-[#161311]/80">+251 99 691 0890</p>
+              <a href="tel:+251913904484" className="block text-[#161311]/80 hover:text-[#C6A15B] transition">+251 91 390 4484</a>
+              <a href="tel:+251996910890" className="block text-[#161311]/80 hover:text-[#C6A15B] transition">+251 99 691 0890</a>
             </div>
             <div>
               <h3 className="text-[#C6A15B] font-semibold mb-1">{t.contact.visitUs}</h3>
-              <p className="text-[#161311]/80">{t.contact.address}</p>
+              <p className="text-[#161311]/80 flex items-start gap-2">
+                <MapPin className="text-[#C6A15B] mt-1 flex-shrink-0" size={18} />
+                <a href="https://maps.app.goo.gl/HdUWaKT3rtdDicWZ6" target="_blank" rel="noopener noreferrer" className="hover:text-[#C6A15B] transition">
+                  {t.contact.address}
+                </a>
+              </p>
             </div>
             <div>
               <h3 className="text-[#C6A15B] font-semibold mb-2">Follow Us</h3>

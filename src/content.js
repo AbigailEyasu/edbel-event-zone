@@ -42,24 +42,9 @@ export const content = {
     },
     reviews: {
       heading: "What Our Clients Say",
-      subheading: "Real stories from beautiful celebrations we've styled",
-      items: [
-        {
-          quote: "The wedding decor was beyond our expectations! Every single detail was elegant, and the setup was absolutely perfect.",
-          author: "Happy Couple",
-          event: "Wedding Celebration"
-        },
-        {
-          quote: "Loved the custom setup for my son's birthday. The team was extremely fast, professional, and easy to work with.",
-          author: "Birthday Client",
-          event: "1st Birthday Party"
-        },
-        {
-          quote: "Edbel made my bridal shower look so dreamy. I received so many compliments on the setup. Highly recommend their services!",
-          author: "Shower Client",
-          event: "Bridal Shower"
-        }
-      ]
+      subheading: "Share your experience — your feedback will appear here",
+      placeholder: "We're collecting real testimonials from our valued clients. Have you worked with Edbel Event Zone? We'd love to feature your experience here.",
+      cta: "Share Your Experience",
     },
     whyUs: {
       heading: "Why Edbel Event Zone?",
@@ -67,9 +52,9 @@ export const content = {
       missionTitle: "Our Mission",
       missionDesc: "We believe every milestone deserves to be celebrated in style. Our mission is to take the stress out of event planning by providing high-quality, customized, and affordable decoration services tailored to your personal taste.",
       stats: [
-        { value: "5.0", label: "Star Rating" },
-        { value: "500+", label: "Events Styled" },
-        { value: "100%", label: "Happy Clients" },
+        { value: "✓", label: "Verified Business" },
+        { value: "100+", label: "Events Styled" },
+        { value: "24/7", label: "Support Available" },
       ],
       items: [
         { title: "Experienced Team", desc: "Professional designers with years of event planning and styling expertise." },
@@ -149,35 +134,20 @@ export const content = {
         { title: "ሠርግ", desc: "ውብ አርክ፣ መተላለፊያ እና ሙሉ የሠርግ ማስዋብ" },
         { title: "ልደት", desc: "አስደሳች ገጽታዎች እና ውብ የኬክ አቀማመጥ" },
         { title: "ብራይዳል እና ቤቢ ሻወር", desc: "ለክብረ በዓሉ ባለቤት የሚመጥን ማራኪ ማስዋብ" },
-        { title: "ቀለበት", desc: "ለልዩ ቅጽበትዎ የፍቅር ገጽታ" },
-        { title: "አበባ እና ኬክ", desc: "ከጭብጥዎ ጋር የሚስማማ ልዩ አበባ እና ኬክ" },
-        { title: "የዕቃ ኪራይ", desc: "አርክ፣ ጀርባ ማስጌጫ እና ሌሎች የዝግጅት እቃዎች ኪራይ" },
+        { title: "የጥሎሽ ዝግጅት", desc: "ለልዩ ቅጽበትዎ ሮማንቲክ እና ውብ ማስዋብ" },
+        { title: "የአበባ ዝግጅት እና ኬክ", desc: "ከገጽታዎ ጋር የሚስማማ ልዩ የአበባ ማስጌጫ እና ኬክ" },
+        { title: "የዕቃ ኪራይ", desc: "አርክ፣ ባክድሮፕ እና ሌሎች የዝግጅት እቃዎች ኪራይ" },
       ],
     },
     gallery: {
-      heading: "ከስራችን ትንሽ ናሙና",
-      subheading: "እያንዳንዱ ዝግጅት በውበት የተሞላ",
+      heading: "ከዲዛይኖቻችን ጥቂቶቹ",
+      subheading: "እያንዳንዱ ዝግጅት በውበት እና በጥንቃቄ የተሰራ",
     },
     reviews: {
       heading: "የደንበኞች ምስክርነት",
-      subheading: "ካጌጥናቸው ውብ ዝግጅቶች የተገኙ አስተያየቶች",
-      items: [
-        {
-          quote: "የሠርግ ዲኮሩ ከጠበቅነው በላይ ነበር! እያንዳንዱ ዝርዝር ነገር ውብ እና አቀማመጡ ፍጹም ነበረ።",
-          author: "ደስተኛ ሙሽሮች",
-          event: "የሠርግ በዓል"
-        },
-        {
-          quote: "ለልጄ ልደት የተሰራው ዲኮር በጣም ደስ የሚል ነበር። ሰራተኞቹ እጅግ ፈጣን፣ ባለሙያ እና ተግባቢ ናቸው።",
-          author: "የልደት ደንበኛ",
-          event: "የ1ኛ ዓመት ልደት"
-        },
-        {
-          quote: "የብራይዳል ሻወር ዝግጅቴን በጣም ማራኪ አድርገውታል። ስለ ዲኮሩ ብዙ አድናቆት ደርሶኛል። በከፍተኛ ሁኔታ እመክራቸዋለሁ!",
-          author: "የሻወር ደንበኛ",
-          event: "ብራይዳል ሻወር"
-        }
-      ]
+      subheading: "ተሞክሮዎን ያካፍሉ — አስተያየትዎ እዚህ ይታያል",
+      placeholder: "ከተከበሩ ደንበኞቻችን እውነተኛ ምስክርነት እየሰበሰብን ነው። ከኤድቤል Event Zone ጋር ሰርተው ያውቃሉ? ተሞክሮዎን እዚህ ማሳየት እንፈልጋለን።",
+      cta: "ተሞክሮዎን ያካፍሉ",
     },
     whyUs: {
       heading: "ለምን እኛን ይመርጣሉ?",
@@ -185,9 +155,9 @@ export const content = {
       missionTitle: "የእኛ ተልዕኮ",
       missionDesc: "እያንዳንዱ ታላቅ ቀን በልዩ ሁኔታ ሊከበር ይገባል ብለን እናምናለን። የእኛ ተልዕኮ የእርስዎን የግል ምርጫ ያማከለ፣ ጥራት ያለው እና ተመጣጣኝ ዋጋ ያለው የዲኮር አገልግሎት በታማኝነት ማቅረብ ነው።",
       stats: [
-        { value: "5.0", label: "ደረጃ (ኮከብ)" },
-        { value: "500+", label: "የተጌጡ ዝግጅቶች" },
-        { value: "100%", label: "ደስተኛ ደንበኞች" },
+        { value: "✓", label: "የተረጋገጠ ንግድ" },
+        { value: "100+", label: "የተጌጡ ዝግጅቶች" },
+        { value: "24/7", label: "ድጋፍ እንሰጣለን" },
       ],
       items: [
         { title: "ልምድ ያለው ቡድን", desc: "ለዓመታት በዘርፉ የቆዩ እና ጥበባዊ ችሎታ ያላቸው ዲዛይነሮች።" },
