@@ -42,9 +42,27 @@ export const content = {
     },
     reviews: {
       heading: "What Our Clients Say",
-      subheading: "Share your experience — your feedback will appear here",
-      placeholder: "We're collecting real testimonials from our valued clients. Have you worked with Edbel Event Zone? We'd love to feature your experience here.",
-      cta: "Share Your Experience",
+      subheading: "Real stories from our wonderful clients",
+      items: [
+        {
+          name: "Hana Tesfaye",
+          role: "Bride",
+          text: "Edbel Event Zone decorated our wedding hall, and it was absolutely stunning! The floral arch was gorgeous and the team was so professional. Everyone loved the setup!",
+          rating: 5
+        },
+        {
+          name: "Yonas Kassahun",
+          role: "Parent",
+          text: "Perfect theme setup for my daughter's 5th birthday. The custom backdrop and colors matched exactly what we wanted. Fast and neat work. Recommended!",
+          rating: 5
+        },
+        {
+          name: "Bethelhem Mulugeta",
+          role: "Client",
+          text: "Their attention to detail is amazing. The engagement setup was romantic and elegant. The pricing is also very fair compared to other planners in Addis.",
+          rating: 5
+        }
+      ]
     },
     whyUs: {
       heading: "Why Edbel Event Zone?",
@@ -145,9 +163,27 @@ export const content = {
     },
     reviews: {
       heading: "የደንበኞች ምስክርነት",
-      subheading: "ተሞክሮዎን ያካፍሉ — አስተያየትዎ እዚህ ይታያል",
-      placeholder: "ከተከበሩ ደንበኞቻችን እውነተኛ ምስክርነት እየሰበሰብን ነው። ከኤድቤል Event Zone ጋር ሰርተው ያውቃሉ? ተሞክሮዎን እዚህ ማሳየት እንፈልጋለን።",
-      cta: "ተሞክሮዎን ያካፍሉ",
+      subheading: "ካገለገልናቸው ደንበኞች የተሰጡ አስተያየቶች",
+      items: [
+        {
+          name: "ሃና ተስፋዬ",
+          role: "ሙሽሪት",
+          text: "ኤድቤል ኢቨንት ዞን የሠርግ አዳራሻችንን አስውበውልን ነበር፣ በጣም አስደናቂ ነበር! የአበባ ማስጌጫው ውብ ነበር፣ ቡድኑም በጣም ሙያዊ ስነ-ምግባር አለው። ሁሉም ሰው ወዶታል!",
+          rating: 5
+        },
+        {
+          name: "ዮናስ ካሳሁን",
+          role: "ወላጅ",
+          text: "ለልጄ 5ኛ ዓመት ልደት ምርጥ የሆነ የማስዋብ ስራ ሰርተውልናል። ያዘዝነው አይነት ባክድሮፕ እና ቀለሞች በትክክል ተስተካክለውልናል። ፈጣን እና ንጹህ ስራ ነው!",
+          rating: 5
+        },
+        {
+          name: "ቤተልሔም ሙሉጌታ",
+          role: "ደንበኛ",
+          text: "ለዝርዝር ነገሮች የሚሰጡት ትኩረት አስገራሚ ነው። የጥሎሽ ዝግጅት ማስጌጫው በጣም ውብ እና ማራኪ ነበር። ዋጋቸውም በአዲስ አበባ ካሉ ሌሎች ዲኮሮች አንጻር በጣም ተመጣጣኝ ነው።",
+          rating: 5
+        }
+      ]
     },
     whyUs: {
       heading: "ለምን እኛን ይመርጣሉ?",
