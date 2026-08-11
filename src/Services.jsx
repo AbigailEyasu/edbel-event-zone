@@ -1,11 +1,11 @@
 import { Heart, Cake, Gift, Gem, Flower2, Package } from "lucide-react"
 import { useReveal } from "./useReveal"
-import weddingImg from "./assets/services/wedding.jpg"
-import birthdayNewImg from "./assets/birthday-new.jpg"
-import birthdayImg from "./assets/birthday.jpg"
-import engagementImg from "./assets/services/engagement.png"
-import flowersCakesImg from "./assets/services/flowers_cakes.png"
-import decorRentalImg from "./assets/decor-rental.jpg"
+import weddingImg from "./assets/services/wedding_opt.jpg"
+import birthdayNewImg from "./assets/birthday_new_opt.jpg"
+import birthdayImg from "./assets/birthday_opt.jpg"
+import engagementImg from "./assets/services/engagement_opt.jpg"
+import flowersCakesImg from "./assets/services/flowers_cakes_opt.jpg"
+import decorRentalImg from "./assets/decor_rental_opt.jpg"
 
 const icons = [Heart, Cake, Gift, Gem, Flower2, Package]
 const serviceImages = [
