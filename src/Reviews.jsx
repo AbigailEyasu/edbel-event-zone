@@ -1,5 +1,5 @@
-import { Star, Quote } from "lucide-react"
 import { useReveal } from "./useReveal"
+import { ExternalLink, MessageCircle } from "lucide-react"
 
 function Reviews({ lang, t }) {
   const isAm = lang === "am"
@@ -14,38 +14,69 @@ function Reviews({ lang, t }) {
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-[#FAF6F0] text-3xl md:text-4xl font-semibold" style={{ fontFamily: headingFont }}>
           {t.reviews.heading}
         </h2>
-        <p className="text-[#C6A15B] mt-3 mb-8 md:mb-12" style={{ fontFamily }}>
+        <p className="text-[#C6A15B] mt-3 mb-10 md:mb-14" style={{ fontFamily }}>
           {t.reviews.subheading}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {t.reviews.items.map((item, idx) => (
-            <div key={idx} className="bg-[#1E1916] border border-[#2a221c] rounded-2xl p-6 text-left shadow-sm relative flex flex-col justify-between group hover:border-[#C6A15B]/30 transition-all duration-300">
-              <Quote className="text-[#C6A15B]/10 absolute top-4 right-4" size={32} />
-              <div>
-                <div className="flex gap-1 mb-4">
-                  {[...Array(item.rating)].map((_, i) => (
-                    <Star key={i} size={16} className="text-[#C6A15B] fill-[#C6A15B]" />
-                  ))}
-                </div>
-                <p className="text-[#FAF6F0]/70 text-sm md:text-base leading-relaxed mb-6" style={{ fontFamily }}>
-                  "{item.text}"
-                </p>
-              </div>
-              <div className="border-t border-[#2a221c] pt-4 mt-2">
-                <h4 className="text-[#FAF6F0] font-semibold text-base" style={{ fontFamily: headingFont }}>
-                  {item.name}
-                </h4>
-                <p className="text-[#C6A15B] text-xs mt-0.5" style={{ fontFamily }}>
-                  {item.role}
-                </p>
-              </div>
+        <div className="bg-[#1E1916] border border-[#2a221c] rounded-2xl p-8 md:p-12 flex flex-col items-center gap-6">
+          {/* Social icons */}
+          <div className="flex gap-4">
+            <div className="bg-[#2a221c] p-4 rounded-full">
+              <ExternalLink className="text-[#C6A15B]" size={28} />
             </div>
-          ))}
+            <div className="bg-[#2a221c] p-4 rounded-full">
+              <MessageCircle className="text-[#C6A15B]" size={28} />
+            </div>
+          </div>
+
+          <p className="text-[#FAF6F0]/70 text-base md:text-lg leading-relaxed" style={{ fontFamily }}>
+            {t.reviews.ctaText}{" "}
+            <a
+              href="https://instagram.com/edbeleventzone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C6A15B] underline hover:text-[#d8b876] transition"
+            >
+              {t.reviews.ctaInstagram}
+            </a>{" "}
+            {t.reviews.ctaOr}{" "}
+            <a
+              href="https://t.me/EdbelEventZone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C6A15B] underline hover:text-[#d8b876] transition"
+            >
+              {t.reviews.ctaTelegram}
+            </a>{" "}
+            {t.reviews.ctaEnd}
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+            <a
+              href="https://instagram.com/edbeleventzone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#C6A15B] text-[#161311] py-3 px-6 rounded-full font-semibold hover:bg-[#d8b876] transition"
+              style={{ fontFamily }}
+            >
+              <ExternalLink size={18} />
+              Instagram
+            </a>
+            <a
+              href="https://t.me/EdbelEventZone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 border border-[#C6A15B] text-[#C6A15B] py-3 px-6 rounded-full font-semibold hover:bg-[#C6A15B] hover:text-[#161311] transition"
+              style={{ fontFamily }}
+            >
+              <MessageCircle size={18} />
+              Telegram
+            </a>
+          </div>
         </div>
       </div>
     </section>

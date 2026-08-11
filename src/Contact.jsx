@@ -83,7 +83,7 @@ function Contact({ lang, t }) {
               <h3 className="text-[#C6A15B] font-semibold mb-1">{t.contact.visitUs}</h3>
               <p className="text-[#FAF6F0]/80 flex items-start gap-2">
                 <MapPin className="text-[#C6A15B] mt-1 flex-shrink-0" size={18} />
-                <a href="https://maps.app.goo.gl/HdUWaKT3rtdDicWZ6" target="_blank" rel="noopener noreferrer" className="hover:text-[#C6A15B] transition">
+                <a href="https://maps.app.goo.gl/xvR5QmmjUStFjN5Q8" target="_blank" rel="noopener noreferrer" className="hover:text-[#C6A15B] transition">
                   {t.contact.address}
                 </a>
               </p>

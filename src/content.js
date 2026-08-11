@@ -31,8 +31,8 @@ export const content = {
         { title: "Weddings", desc: "Dreamy arches, aisles, and full ceremony decor" },
         { title: "Birthdays", desc: "Fun themes and beautiful cake setups" },
         { title: "Bridal & Baby Showers", desc: "Sweet, elegant decor for the guest of honor" },
-        { title: "Engagements", desc: "Romantic setups for your big moment" },
-        { title: "Flowers & Cakes", desc: "Custom florals and cakes made to match your theme" },
+        { title: "Engagements", desc: "Romantic setups for your special moment" },
+        { title: "Flowers & Cakes", desc: "Fresh florals and cakes that match your theme" },
         { title: "Decor Rentals", desc: "Arches, backdrops, and event equipment for rent" },
       ],
     },
@@ -42,27 +42,12 @@ export const content = {
     },
     reviews: {
       heading: "What Our Clients Say",
-      subheading: "Real stories from our wonderful clients",
-      items: [
-        {
-          name: "Hana Tesfaye",
-          role: "Bride",
-          text: "Edbel Event Zone decorated our wedding hall, and it was absolutely stunning! The floral arch was gorgeous and the team was so professional. Everyone loved the setup!",
-          rating: 5
-        },
-        {
-          name: "Yonas Kassahun",
-          role: "Parent",
-          text: "Perfect theme setup for my daughter's 5th birthday. The custom backdrop and colors matched exactly what we wanted. Fast and neat work. Recommended!",
-          rating: 5
-        },
-        {
-          name: "Bethelhem Mulugeta",
-          role: "Client",
-          text: "Their attention to detail is amazing. The engagement setup was romantic and elegant. The pricing is also very fair compared to other planners in Addis.",
-          rating: 5
-        }
-      ]
+      subheading: "We'd love to hear from you!",
+      ctaText: "Have you worked with us? Leave a comment on our",
+      ctaInstagram: "Instagram",
+      ctaOr: "or",
+      ctaTelegram: "Telegram",
+      ctaEnd: "— your feedback means the world to us.",
     },
     whyUs: {
       heading: "Why Edbel Event Zone?",
@@ -72,7 +57,7 @@ export const content = {
       stats: [
         { value: "✓", label: "Verified Business" },
         { value: "100+", label: "Events Styled" },
-        { value: "24/7", label: "Support Available" },
+        { value: "Mon–Sat", label: "Available" },
       ],
       items: [
         { title: "Experienced Team", desc: "Professional designers with years of event planning and styling expertise." },
@@ -102,7 +87,7 @@ export const content = {
         },
         {
           question: "Do you offer decor rental only?",
-          answer: "Yes! We offer rentals for arches, backdrops, tables, chairs, and other event equipment. You can view options in our service list or contact us directly."
+          answer: "Yes! We offer rentals for arches, backdrops, tables, chairs, and other event equipment. Contact us directly via phone or Telegram to ask about available items."
         },
         {
           question: "Do you travel outside Addis Ababa?",
@@ -149,11 +134,11 @@ export const content = {
       heading: "አገልግሎቶቻችን",
       subheading: "ለእያንዳንዱ ልዩ ቀን የሚመጥን ውብ ዝግጅት",
       items: [
-        { title: "ሠርግ", desc: "ውብ አርክ፣ መተላለፊያ እና ሙሉ የሠርግ ማስዋብ" },
-        { title: "ልደት", desc: "አስደሳች ገጽታዎች እና ውብ የኬክ አቀማመጥ" },
-        { title: "ብራይዳል እና ቤቢ ሻወር", desc: "ለክብረ በዓሉ ባለቤት የሚመጥን ማራኪ ማስዋብ" },
-        { title: "የጥሎሽ ዝግጅት", desc: "ለልዩ ቅጽበትዎ ሮማንቲክ እና ውብ ማስዋብ" },
-        { title: "የአበባ ዝግጅት እና ኬክ", desc: "ከገጽታዎ ጋር የሚስማማ ልዩ የአበባ ማስጌጫ እና ኬክ" },
+        { title: "ሠርግ", desc: "ውብ አርክ፣ መተላለፊያ እና ሙሉ የሠርግ ማስዋቢያ" },
+        { title: "ልደት", desc: "አስደሳች ጭብጦች እና ውብ የኬክ ዝግጅት" },
+        { title: "ብራይዳል እና ቤቢ ሻወር", desc: "ለክብረ በዓሉ ባለቤት የሚመጥን ማራኪ ማስዋቢያ" },
+        { title: "የጥሎሽ ዝግጅት", desc: "ለልዩ ቅጽበትዎ ውብ እና ሞቅ ያለ ዝግጅት" },
+        { title: "አበባ እና ኬክ", desc: "ከዝግጅትዎ ጋር የሚስማማ ትኩስ አበባ እና ኬክ" },
         { title: "የዕቃ ኪራይ", desc: "አርክ፣ ባክድሮፕ እና ሌሎች የዝግጅት እቃዎች ኪራይ" },
       ],
     },
@@ -162,28 +147,13 @@ export const content = {
       subheading: "እያንዳንዱ ዝግጅት በውበት እና በጥንቃቄ የተሰራ",
     },
     reviews: {
-      heading: "የደንበኞች ምስክርነት",
-      subheading: "ካገለገልናቸው ደንበኞች የተሰጡ አስተያየቶች",
-      items: [
-        {
-          name: "ሃና ተስፋዬ",
-          role: "ሙሽሪት",
-          text: "ኤድቤል ኢቨንት ዞን የሠርግ አዳራሻችንን አስውበውልን ነበር፣ በጣም አስደናቂ ነበር! የአበባ ማስጌጫው ውብ ነበር፣ ቡድኑም በጣም ሙያዊ ስነ-ምግባር አለው። ሁሉም ሰው ወዶታል!",
-          rating: 5
-        },
-        {
-          name: "ዮናስ ካሳሁን",
-          role: "ወላጅ",
-          text: "ለልጄ 5ኛ ዓመት ልደት ምርጥ የሆነ የማስዋብ ስራ ሰርተውልናል። ያዘዝነው አይነት ባክድሮፕ እና ቀለሞች በትክክል ተስተካክለውልናል። ፈጣን እና ንጹህ ስራ ነው!",
-          rating: 5
-        },
-        {
-          name: "ቤተልሔም ሙሉጌታ",
-          role: "ደንበኛ",
-          text: "ለዝርዝር ነገሮች የሚሰጡት ትኩረት አስገራሚ ነው። የጥሎሽ ዝግጅት ማስጌጫው በጣም ውብ እና ማራኪ ነበር። ዋጋቸውም በአዲስ አበባ ካሉ ሌሎች ዲኮሮች አንጻር በጣም ተመጣጣኝ ነው።",
-          rating: 5
-        }
-      ]
+      heading: "የደንበኞች አስተያየት",
+      subheading: "አስተያየትዎን ያካፍሉን!",
+      ctaText: "ከኛ ጋር ሰርተው ያውቃሉ? አስተያየትዎን በ",
+      ctaInstagram: "Instagram",
+      ctaOr: "ወይም",
+      ctaTelegram: "Telegram",
+      ctaEnd: "ላይ ይጻፉልን — ምስክርነትዎ ለእኛ ትልቅ ዋጋ አለው።",
     },
     whyUs: {
       heading: "ለምን እኛን ይመርጣሉ?",
@@ -193,11 +163,11 @@ export const content = {
       stats: [
         { value: "✓", label: "የተረጋገጠ ንግድ" },
         { value: "100+", label: "የተጌጡ ዝግጅቶች" },
-        { value: "24/7", label: "ድጋፍ እንሰጣለን" },
+        { value: "ሰኞ–ቅዳሜ", label: "እናገለግላለን" },
       ],
       items: [
         { title: "ልምድ ያለው ቡድን", desc: "ለዓመታት በዘርፉ የቆዩ እና ጥበባዊ ችሎታ ያላቸው ዲዛይነሮች።" },
-        { title: "ተለዋዋጭ ጥቅል", desc: "የእርስዎን በጀት እና ፍላጎት መሰረት ያደረጉ ተስማሚ አማራጮች።" },
+        { title: "ተስማሚ ፓኬጅ", desc: "የበጀትዎን እና ፍላጎትዎን መሰረት ያደረጉ ምቹ አማራጮች።" },
         { title: "በአዲስ አበባ የታመነ", desc: "የከተማችንን ቤተሰቦች እና ድርጅቶች በታማኝነት በማገልገል የሚታወቅ።" },
       ]
     },
@@ -223,15 +193,15 @@ export const content = {
         },
         {
           question: "የዕቃ ኪራይ ብቻ አገልግሎት ትሰጣላችሁ?",
-          answer: "አዎ! የተለያዩ አርኮችን፣ የጀርባ ማስጌጫዎችን፣ ጠረጴዛዎችን፣ ወንበሮችን እና ሌሎች የዝግጅት እቃዎችን እናከራያለን። አማራጮቹን በአገልግሎት ዝርዝራችን ውስጥ ማየት ወይም በቀጥታ ሊያገኙን ይችላሉ።"
+          answer: "አዎ! አርኮችን፣ ባክድሮፖችን፣ ጠረጴዛዎችን፣ ወንበሮችን እና ሌሎች የዝግጅት እቃዎችን እናከራያለን። ዝርዝሩን ለማወቅ በቀጥታ ስልክ ወይም ቴሌግራም ያግኙን።"
         },
         {
           question: "ከአዲስ አበባ ውጭ ትሄዳላችሁ?",
-          answer: "ዋናው አገልግሎታችን በአዲስ አበባ ውስጥ ቢሆንም፣ እንደ ዝግጅቱ መጠን እና ሁኔታ ወደ አቅራቢያ ከተሞች ተጉዘን ማዘጋጀት እንችላለን። ተጨማሪ የትራንስፖርት ክፍያ ይኖረዋል።"
+          answer: "ዋናው አገልግሎታችን በአዲስ አበባ ውስጥ ቢሆንም፣ እንደ ዝግጅቱ መጠን እና ሁኔታ ወደ አቅራቢያ ቦታዎች ተጉዘን ማዘጋጀት እንችላለን። ተጨማሪ የትራንስፖርት ክፍያ ሊኖረው ይችላል።"
         },
         {
           question: "በፓኬጅ ውስጥ ምን ምን ነገሮች ይካተታሉ?",
-          answer: "የእኛ መደበኛ ጥቅሎች የጀርባ ዲዛይን፣ የአበባ ማስተካከያዎችን፣ የኬክ ጠረጴዛዎችን፣ ገጽታ ያላቸው ማስጌጫዎችን እንዲሁም የመገጣጠም እና የማንሳት አገልግሎቶችን ያካትታሉ። ጥቅሎቹ በእርስዎ ፍላጎት ሊበጁ ይችላሉ።"
+          answer: "የእኛ ፓኬጆች ብዙ ጊዜ ባክድሮፕ፣ አበባ፣ የኬክ ጠረጴዛ፣ ማስዋቢያዎች እና ማዘጋጀት/ማንሳቱን ያካትታሉ። ፓኬጁ እንደ ፍላጎትዎ ሊቀየር ይችላል።"
         }
       ]
     },

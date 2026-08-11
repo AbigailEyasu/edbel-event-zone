@@ -1,15 +1,21 @@
 import { Heart, Cake, Gift, Gem, Flower2, Package } from "lucide-react"
 import { useReveal } from "./useReveal"
+import weddingImg from "./assets/services/wedding.jpg"
+import birthdayImg from "./assets/birthday.jpg"
+import bridalImg from "./assets/bridal.jpg"
+import engagementImg from "./assets/services/engagement.png"
+import flowersCakesImg from "./assets/services/flowers_cakes.png"
+import decorRentalImg from "./assets/decor-rental.jpg"
 
 const icons = [Heart, Cake, Gift, Gem, Flower2, Package]
 const serviceImages = [
-  "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1535254973040-607b474cb50d?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=600&auto=format&fit=crop"
-]
+  weddingImg,
+  birthdayImg,
+  bridalImg,
+  engagementImg,
+  flowersCakesImg,
+  decorRentalImg
+];
 
 
 
