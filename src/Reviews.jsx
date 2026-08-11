@@ -23,6 +23,18 @@ function Reviews({ lang, t }) {
         </p>
 
         <div className="bg-[#1E1916] border border-[#2a221c] rounded-2xl p-8 md:p-12 flex flex-col items-center gap-6">
+          {/* Google rating badge */}
+          <div className="flex items-center gap-3 bg-[#2a221c] px-5 py-3 rounded-full">
+            <span className="text-[#C6A15B] text-lg font-bold">5.0 ★★★★★</span>
+            <span className="text-[#FAF6F0]/60 text-sm">{isAm ? "45+ በGoogle ግምገማዎች" : "45+ Google Reviews"}</span>
+          </div>
+
+          {/* Real Google review quote */}
+          <blockquote className="text-[#FAF6F0]/80 text-lg md:text-xl italic leading-relaxed max-w-xl" style={{ fontFamily }}>
+            "From start to finish, your team went above and beyond to meet my needs."
+          </blockquote>
+          <p className="text-[#FAF6F0]/40 text-sm">— {isAm ? "ከGoogle ግምገማዎች" : "From Google Reviews"}</p>
+
           {/* Social icons */}
           <div className="flex gap-4">
             <div className="bg-[#2a221c] p-4 rounded-full">
@@ -65,6 +77,15 @@ function Reviews({ lang, t }) {
             >
               <ExternalLink size={18} />
               Instagram
+            </a>
+            <a
+              href="https://web.facebook.com/EdbelEventZone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#3b5998] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#4c6aad] transition"
+              style={{ fontFamily }}
+            >
+              Facebook
             </a>
             <a
               href="https://t.me/EdbelEventZone"

@@ -55,8 +55,8 @@ export const content = {
       missionTitle: "Our Mission",
       missionDesc: "We believe every milestone deserves to be celebrated in style. Our mission is to take the stress out of event planning by providing high-quality, customized, and affordable decoration services tailored to your personal taste.",
       stats: [
-        { value: "✓", label: "Verified Business" },
-        { value: "100+", label: "Events Styled" },
+        { value: "5.0 ★", label: "Google Rating" },
+        { value: "45+", label: "Google Reviews" },
         { value: "Mon–Sat", label: "Available" },
       ],
       items: [
@@ -75,7 +75,7 @@ export const content = {
       formButton: "Request a Quote",
       callUs: "Call Us",
       visitUs: "Visit Us",
-      address: "Sarbet, around Vatican Embassy, in front of Dama Trade, Addis Ababa",
+      address: "Bedria City Mall, Haya Hulet (22), Addis Ababa",
     },
     faq: {
       heading: "Frequently Asked Questions",
@@ -161,8 +161,8 @@ export const content = {
       missionTitle: "የእኛ ተልዕኮ",
       missionDesc: "እያንዳንዱ ታላቅ ቀን በልዩ ሁኔታ ሊከበር ይገባል ብለን እናምናለን። የእኛ ተልዕኮ የእርስዎን የግል ምርጫ ያማከለ፣ ጥራት ያለው እና ተመጣጣኝ ዋጋ ያለው የዲኮር አገልግሎት በታማኝነት ማቅረብ ነው።",
       stats: [
-        { value: "✓", label: "የተረጋገጠ ንግድ" },
-        { value: "100+", label: "የተጌጡ ዝግጅቶች" },
+        { value: "5.0 ★", label: "በGoogle ደረጃ" },
+        { value: "45+", label: "የGoogle ግምገማዎች" },
         { value: "ሰኞ–ቅዳሜ", label: "እናገለግላለን" },
       ],
       items: [
@@ -181,7 +181,7 @@ export const content = {
       formButton: "ጥያቄ ይላኩ",
       callUs: "ይደውሉልን",
       visitUs: "ይጎብኙን",
-      address: "ሳርቤት፣ ቫቲካን ኤምባሲ አካባቢ፣ ዳማ ትሬድ ፊት ለፊት፣ አዲስ አበባ",
+      address: "በድሪያ ሲቲ ሞል፣ ሃያ ሁለት (22)፣ አዲስ አበባ",
     },
     faq: {
       heading: "ተደጋግመው የሚጠየቁ ጥያቄዎች",

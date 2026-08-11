@@ -116,7 +116,15 @@ function Contact({ lang, t }) {
                   TikTok — @edbeleventzone
                 </a>
                 <a
-                  href="https://maps.app.goo.gl/HdUWaKT3rtdDicWZ6"
+                  href="https://web.facebook.com/EdbelEventZone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C6A15B] underline hover:text-[#d8b876] transition"
+                >
+                  Facebook — ኤድቤል Event Zone
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/xvR5QmmjUStFjN5Q8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#C6A15B] underline hover:text-[#d8b876] transition"
