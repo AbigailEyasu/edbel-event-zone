@@ -1,4 +1,4 @@
-import heroBg from "./assets/services/wedding_opt.jpg"
+import heroBg from "./assets/hero.jpg"
 
 function Hero({ lang, setLang, t }) {
   return (
