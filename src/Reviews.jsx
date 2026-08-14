@@ -1,5 +1,6 @@
 import { useReveal } from "./useReveal"
-import { ExternalLink, MessageCircle, Star } from "lucide-react"
+import { Star } from "lucide-react"
+import { SocialIcon } from "./SocialIcon"
 
 function Reviews({ lang, t }) {
   const isAm = lang === "am"
@@ -54,10 +55,10 @@ function Reviews({ lang, t }) {
           {/* Social icons */}
           <div className="flex gap-4">
             <div className="bg-[#2a221c] p-4 rounded-full">
-              <ExternalLink className="text-[#C6A15B]" size={28} />
+              <SocialIcon name="instagram" className="text-[#C6A15B]" size={28} />
             </div>
             <div className="bg-[#2a221c] p-4 rounded-full">
-              <MessageCircle className="text-[#C6A15B]" size={28} />
+              <SocialIcon name="telegram" className="text-[#C6A15B]" size={28} />
             </div>
           </div>
 
@@ -101,7 +102,7 @@ function Reviews({ lang, t }) {
               className="flex items-center justify-center gap-2 bg-[#C6A15B] text-[#161311] py-3 px-6 rounded-full font-semibold hover:bg-[#d8b876] transition"
               style={{ fontFamily }}
             >
-              <ExternalLink size={18} />
+              <SocialIcon name="instagram" size={18} />
               Instagram
             </a>
             <a
@@ -111,6 +112,7 @@ function Reviews({ lang, t }) {
               className="flex items-center justify-center gap-2 bg-[#3b5998] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#4c6aad] transition"
               style={{ fontFamily }}
             >
+              <SocialIcon name="facebook" size={18} />
               Facebook
             </a>
             <a
@@ -120,7 +122,7 @@ function Reviews({ lang, t }) {
               className="flex items-center justify-center gap-2 border border-[#C6A15B] text-[#C6A15B] py-3 px-6 rounded-full font-semibold hover:bg-[#C6A15B] hover:text-[#161311] transition"
               style={{ fontFamily }}
             >
-              <MessageCircle size={18} />
+              <SocialIcon name="telegram" size={18} />
               Telegram
             </a>
           </div>
